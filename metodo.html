@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Método · Proyecto investigador</title>
+<style>
+:root{color-scheme:light;--ink:#092d45;--muted:#38576b;--line:#c4d9e3;--accent:#187982}
+*{box-sizing:border-box}
+body{margin:0;background:white;color:var(--ink);font:clamp(14px,1.65vw,22px)/1.35 system-ui,sans-serif}
+main{max-width:1440px;margin:auto;padding:clamp(18px,4vw,56px)}
+h1,h2,p{margin:0} h1{font-size:2.5em;line-height:1.04;margin-bottom:.65em} h2{font-size:1.18em;margin-bottom:.7em}
+.layout{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,56px)}
+section+section{border-left:1px solid var(--line);padding-left:clamp(20px,4vw,56px)}
+.samples{display:grid;grid-template-columns:1fr 1fr;gap:.55em}
+.sample{background:#eaf3f7;border-radius:.55em;padding:.6em .75em}
+small{display:block;color:var(--muted);font-size:.82em}
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);list-style:none;padding:0;margin:1.2em 0;text-align:center;position:relative}
+.timeline::before{content:"";position:absolute;top:.38em;left:16.67%;right:16.67%;height:2px;background:#9bbcc9}
+.timeline li{position:relative}
+.timeline li::before{content:"";display:block;background:var(--accent);width:.8em;height:.8em;border-radius:50%;margin:0 auto .3em}
+.procedure p+p{margin-top:.42em}.note{margin-top:.75em}
+.group{color:var(--muted);font-size:.82em;font-weight:700;margin:.65em 0 .35em}
+details{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;padding:.42em .25em;font-weight:650;color:var(--ink)}
+summary::marker{color:var(--accent)}
+summary:hover,summary:focus-visible{background:#eaf3f7}
+details p{padding:.05em .5em .6em 1em;color:var(--muted);font-size:.84em}
+@media(max-width:620px){.layout{grid-template-columns:1fr}section+section{border-left:0;padding:1em 0 0;border-top:1px solid var(--line)}}
+.measure-list{max-height:clamp(125px,24vh,220px);overflow:auto;overscroll-behavior:contain;color:var(--muted);font-size:.82em}.measure-list ul{margin:.1em 0 .7em;padding-left:1.5em}.measure-list li+li{margin-top:.3em}.measure-list:focus-visible{outline:2px solid var(--accent)}
+body{background:transparent;color:#002842;font-family:"Source Sans 3","Source Sans Pro","Segoe UI",Arial,sans-serif;font-size:clamp(13px,1.43vw,25px)}:root{--ink:#002842;--muted:#24465b;--accent:#19ae46;--line:#d8e3df}main{max-width:none;padding:0}.layout{grid-template-columns:1fr 1fr;gap:14%}section+section{border:0;padding:0}.sample{background:#f1f6f4;border-radius:.28em;border-top:2px solid var(--accent)}.timeline::before{background:var(--accent)}summary:hover,summary:focus-visible{background:#eff8f1}.badge{display:inline-block;font-size:.82em;font-weight:700;padding:.08em .42em;border-radius:.23em;margin-right:.25em;white-space:nowrap}.ad{background:#e3f5e9;color:#11572d}.aj{background:#e2edf5;color:#002842}.both{background:#edf0f2;color:#284354}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.measure-list{max-height:clamp(100px,28vh,240px)}
+summary{padding-block:.28em}.group{margin-block:.5em .24em}.measure-list{max-height:clamp(95px,23vh,200px)}
+main{padding:clamp(14px,2.2vh,26px) clamp(16px,2.2vw,34px)}
+.support{margin-top:.35em}
+.group{color:var(--accent)}
+</style>
+</head>
+<body>
+<style>.project-nav{display:flex;flex-wrap:wrap;gap:.45rem;padding:.7rem clamp(16px,2.2vw,34px);border-bottom:1px solid #d8e3df;font-size:.9rem}.project-nav a{color:#002842;text-decoration:none;padding:.35em .65em;border-radius:4px}.project-nav a:hover,.project-nav a:focus-visible{background:#edf7ef}.project-nav a[aria-current="page"]{color:#fff;background:#002842;border-bottom:3px solid #19ae46}.embedded .project-nav{display:none}</style><script>if(window.self!==window.top)document.documentElement.classList.add("embedded");</script><nav class="project-nav" aria-label="Proyecto investigador"><a href="./">Inicio</a><a href="./metodo.html" aria-current="page">Muestra, procedimiento e instrumentos</a><a href="./plan-analisis.html">Plan de trabajo y análisis</a></nav>
+<main>
+
+<div class="layout">
+<section aria-labelledby="sample-heading">
+<h2 class="sr-only" id="sample-heading">Muestra y procedimiento</h2>
+<div class="samples">
+<div class="sample"><strong>Adolescentes</strong><small>Secundaria · ≈1.000 en T1</small></div>
+<div class="sample"><strong>Adultos jóvenes</strong><small>Universidad · ≈1.000 en T1</small></div>
+</div>
+<ol class="timeline" aria-label="Tres oleadas en ambas cohortes">
+<li><strong>T1</strong><small>Inicio</small></li>
+<li><strong>T2</strong><small>12 meses</small></li>
+<li><strong>T3</strong><small>24 meses</small></li>
+</ol>
+<div class="procedure">
+<p><strong>Cada oleada</strong> · Cuestionarios en Qualtrics, en tres sesiones.</p>
+<p><strong>Solo en T1</strong> · Evaluación presencial colectiva de aptitudes cognitivas.</p>
+</div>
+<small class="note">Revisión ética y de protección de datos · Consentimiento y asentimiento según proceda.</small>
+<small class="note support">Información sobre recursos de apoyo psicológico después de cada sesión.</small>
+</section>
+<section aria-labelledby="measure-heading">
+<h2 class="sr-only" id="measure-heading">Instrumentos</h2>
+
+<p class="group">Estructura y factores transdiagnósticos</p>
+<div class="instrument"><button type="button" class="instrument-button" aria-haspopup="dialog">Problemas interiorizados y exteriorizados</button><template><ul><li><span class="badge ad">Adolescentes</span> Síntomas interiorizados y exteriorizados en adolescentes · SENA (Fernández-Pinto et al., 2015).</li><li><span class="badge aj">Adultos jóvenes</span> Síntomas interiorizados en adultos jóvenes · Escalas de gravedad DSM-5 (Vidal-Arenas et al., 2021).</li><li><span class="badge aj">Adultos jóvenes</span> TDAH y conducta antisocial · ASRS v1.1 (Pedrero-Pérez y Puerta-García, 2007) y Escala breve de conducta antisocial (Mezquita et al., 2021).</li><li><span class="badge both">Ambas cohortes</span> Consumos y conductas adictivas · CODIS (elaboración propia), AUDIT (Babor et al., 2001), CUDIT-R (Mezquita et al., 2022), IGD SF (Pontes y Griffiths, 2015; López Fernández et al., 2024) y BSMAS (López Fernández et al., 2025).</li></ul></template></div>
+<div class="instrument"><button type="button" class="instrument-button" aria-haspopup="dialog">Personalidad e inteligencia</button><template><ul><li><span class="badge both">Ambas cohortes</span> Cinco grandes rasgos de personalidad · MASK 5-S (Ibáñez et al., 2025).</li><li><span class="badge both">Ambas cohortes</span> Rasgos psicopáticos, personalidad oscura e insensibilidad afectiva · YPI (Orue y Andershed, 2015), SD4 (Ortet-Walker et al., 2024) e ICU (López-Romero et al., 2015).</li><li><span class="badge both">Ambas cohortes</span> Aptitudes cognitivas, solo en T1 · DAT-5 (Bennett et al., 2011), BAT-7 (Arribas et al., 2013) y PMA-R (Departamento de I+D+i, 2018).</li></ul></template></div><div class="instrument"><button type="button" class="instrument-button" aria-haspopup="dialog">Variables cognitivas</button><template><ul><li><span class="badge both">Ambas cohortes</span> Rumiación, regulación emocional e intolerancia a la incertidumbre · RTSQ (Vidal-Arenas et al., 2023), CERQ (Domínguez-Sánchez et al., 2013; Chamizo-Nieto et al., 2020) e IUS-12 (Carleton et al., 2007).</li><li><span class="badge both">Ambas cohortes</span> Desconexión moral · MMDS (Rubio-Garay et al., 2017).</li></ul></template></div>
+<div class="instrument"><button type="button" class="instrument-button" aria-haspopup="dialog">Variables ambientales</button><template><ul><li><span class="badge both">Ambas cohortes</span> Experiencias traumáticas · CTA (elaboración propia).</li><li><span class="badge both">Ambas cohortes</span> Sucesos vitales estresantes · LEIA (Moya-Higueras et al., 2020).</li><li><span class="badge both">Ambas cohortes</span> Apoyo social percibido · EMAP (Landeta y Calvete, 2002).</li><li><span class="badge both">Ambas cohortes</span> Conducta antinormativa del grupo de iguales · DPS (Gallego-Moya, 2019).</li><li><span class="badge both">Ambas cohortes</span> Exposición a la violencia · CEV (Orue y Calvete, 2010).</li></ul></template></div>
+<div class="instrument"><button type="button" class="instrument-button" aria-haspopup="dialog">Indicadores de salud psicológica</button><template><ul><li><span class="badge ad">Adolescentes</span> Satisfacción con la vida · SWLS (Casas et al., 2013).</li><li><span class="badge aj">Adultos jóvenes</span> Satisfacción con la vida · SWLS (Atienza et al., 2000).</li><li><span class="badge both">Ambas cohortes</span> Bienestar subjetivo · PWI (Casas et al., 2013).</li></ul></template></div>
+<p class="group">Procesos específicos</p>
+<div class="instrument"><button type="button" class="instrument-button" aria-haspopup="dialog">Cannabis, apatía y depresión</button><template><ul><li><span class="badge both">Ambas cohortes</span> Cantidad y frecuencia · CODIS (elaboración propia). Uso problemático · CUDIT-R (Mezquita et al., 2022).</li><li><span class="badge aj">Adultos jóvenes</span> Motivos de consumo · MMM-SF (Mezquita et al., 2019).</li><li><span class="badge aj">Adultos jóvenes</span> Apatía · AES-S (Martínez-Cao et al., 2022).</li><li><span class="badge ad">Adolescentes</span> Síntomas depresivos · SENA (Fernández-Pinto et al., 2015).</li><li><span class="badge aj">Adultos jóvenes</span> Síntomas depresivos · Escalas de gravedad DSM-5 (Vidal-Arenas et al., 2021).</li></ul></template></div>
+<div class="instrument"><button type="button" class="instrument-button" aria-haspopup="dialog">Conducta suicida y autolesión no suicida</button><template><ul><li><span class="badge both">Ambas cohortes</span> Ideación · SENTIA (Díez-Gómez et al., 2020). Intentos y frecuencia de autolesión no suicida · Registros de elaboración propia.</li><li><span class="badge both">Ambas cohortes</span> Percepción de ser una carga y pertenencia frustrada · INQ-S-9 (Silva et al., 2018). Desesperanza · STHS (Dunn et al., 2014). Dolor psicológico · Psychache Scale (Ordóñez-Carrasco et al., 2022).</li><li><span class="badge both">Ambas cohortes</span> Derrota y atrapamiento · Defeat Scale y Entrapment Scale (Ordóñez-Carrasco et al., 2021; Huertes-del Arco et al., 2025 para atrapamiento).</li><li><span class="badge both">Ambas cohortes</span> Conexión con la vida · RFL-YA-II (Pirani et al., 2021). Expectativas sobre la autolesión · NEQ (Hasking y Boyes, 2018).</li></ul></template></div>
+<div class="instrument"><button type="button" class="instrument-button" aria-haspopup="dialog">Uso simultáneo de alcohol y cannabis (SAM)</button><template><ul><li><span class="badge aj">Adultos jóvenes</span> Frecuencia, cantidad y problemas asociados · Registros de elaboración propia.</li><li><span class="badge aj">Adultos jóvenes</span> Motivos de uso simultáneo · Adaptación propia a partir de DMQ-R SF y MMM-SF. Motivos de consumo de cannabis · MMM-SF (Mezquita et al., 2019).</li></ul></template></div>
+<small class="note">Medidas comunes o versiones análogas según la etapa evolutiva.</small>
+</section>
+</div>
+</main>
+<style>
+dialog{box-sizing:border-box;width:calc(100% - 24px);max-width:960px;max-height:calc(100% - 20px);border:1px solid #d8e3df;border-top:4px solid var(--accent);border-radius:8px;padding:clamp(12px,2.5vw,28px);color:var(--ink);background:white}
+.instrument{border-bottom:1px solid var(--line)}.instrument-button{width:100%;text-align:left;border:0;background:transparent;color:var(--ink);font:inherit;font-weight:650;padding:.28em .25em;cursor:pointer}.instrument-button::before{content:"＋";color:var(--accent);margin-right:.4em}.instrument-button:hover,.instrument-button:focus-visible{background:#eff8f1}dialog footer[hidden]{display:none}
+dialog::backdrop{background:#00284255}
+dialog header,dialog footer{display:flex;align-items:center;justify-content:space-between;gap:.6em}
+dialog h2{margin:0}dialog ul{padding:0;list-style:none;margin:.65em 0}dialog li{border-bottom:1px solid var(--line);padding:.4em 0;font-size:clamp(14px,1.7vw,23px)}
+dialog button{font:inherit;background:#eef6f0;color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:.24em .55em;cursor:pointer}dialog button:disabled{opacity:.45;cursor:default}
+</style>
+<dialog id="panel" aria-labelledby="panel-title">
+<header><h2 id="panel-title"></h2><form method="dialog"><button type="submit" aria-label="Cerrar ventana">×</button></form></header>
+<ul id="medidas"></ul>
+
+</dialog>
+<script>
+const panel = document.querySelector('#panel');
+const list = document.querySelector('#medidas');
+for (const summary of document.querySelectorAll('.instrument-button')) {
+  summary.setAttribute('aria-haspopup', 'dialog');
+  summary.addEventListener('click', event => {
+    event.preventDefault();
+    document.querySelector('#panel-title').textContent = summary.textContent;
+    list.replaceChildren(...Array.from(summary.nextElementSibling.content.querySelectorAll('li'), item => item.cloneNode(true)));
+    panel.showModal();
+  });
+}
+panel.addEventListener("click", event => { if (event.target === panel) { const box = panel.getBoundingClientRect(); if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) panel.close(); } });
+</script>
+</body>
+</html>
